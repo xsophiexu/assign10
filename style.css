@@ -82,7 +82,7 @@ img { max-width: 100%; max-height: 100%; }
 }
 
 .content{
-  margin: 5vw 6vw 2vw 6vw;
+  margin: 4vw 6vw 2vw 6vw;
   width: 88vw;
   display: flex;
   flex-direction: column;
@@ -211,7 +211,8 @@ h3{ font-size: 3vw; text-align: center; margin-bottom: 1vw;}
   align-items: top;
   margin-bottom: 1.5vw;
 }
-
+.stretch img{ height: 32vw; }
+.push{ padding-right: 2vw; }
 #vid{
   margin-top: -4vw;
   width: 88vw; height: 49.5vw;
