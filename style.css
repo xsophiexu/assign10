@@ -35,6 +35,9 @@ img { max-width: 100%; max-height: 100%; }
   font-size: 37.5vw; line-height: 77.6vh;
   color: #FFFFFF60;
 }
+#aboutme{
+  line-height: 2.4vw;
+}
 
 .topNav{
   z-index: 100;
@@ -43,28 +46,25 @@ img { max-width: 100%; max-height: 100%; }
   background-size: 100vw auto;
   background-position: top;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.3vw;
+  padding: 0.2vw;
+  text-align: center;
 }
 #tNav{ background-image: url(bPaint.jpg); }
 .topNav a{
   color: #B9CBD2;
-  padding-left: 1.5vw; padding-right: 1.5vw;
+  padding-left: 1vw; padding-right: 1vw;
   padding-bottom: 0.3vw;
-  width: 9.1vw;
+  margin-left: 0.7vw;
   padding-top: 0.38vw;
   text-decoration: none;
 }
-.topNav a:active{
-  background: #0086B9;
-  color: #FFFFFF;
+.topNav a.active{
+  border: 2.3px solid #B9CBD2;
 }
 .topNav a:hover{
-  background: #0086B9;
-  color: #FFFFFF;
-  border: 2.3px solid #B9CBD2;
-  box-sizing: border-box;
+  border-bottom: 2.3px solid #B9CBD2;
 }
 
 #dPage a{ color: #B9CBD2; text-decoration: none; }
@@ -88,7 +88,7 @@ img { max-width: 100%; max-height: 100%; }
   flex-direction: column;
 }
 
-#feature{
+.feature{
   padding: 1.8vw;
   border: 3px solid #2C5AA8;
 }
@@ -166,12 +166,6 @@ img { max-width: 100%; max-height: 100%; }
 }
 h3{ font-size: 3vw; text-align: center; margin-bottom: 1vw;}
 
-.footer{
-  margin-top: 20vh;
-  text-align: right;
-  font-size: 1vw;
-}
-
 #home{
   background-image: url('home.png');
   background-size: cover;
@@ -183,6 +177,26 @@ h3{ font-size: 3vw; text-align: center; margin-bottom: 1vw;}
 }
 #home:hover{
   filter: grayscale(0%);
+}
+
+.footer{
+  margin-top: 20vh;
+  text-align: right;
+  font-size: 1vw;
+  width: 88vw;
+  display: flex;
+  justify-content: space-between;
+}
+.socials{ display: flex; justify-content: flex-start; }
+.socials img{
+  width: 3vw; height: 3vw;
+  opacity: 50%;
+}
+.footer img:hover{
+  opacity: 100%;
+}
+#in{
+  width: 2.7vw; height: 2.7vw;
 }
 
 .specific{
