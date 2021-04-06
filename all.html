@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SX Portfolio</title>
+    <link rel="icon" href="SOMETHING">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="script" href="script.js">
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </head>
+  <!-- web colors:  -->
+  <body>
+    <div class="mainContainer">
+    <div class="topNav">
+      <a href="index.html">HOME</a>
+      <div id="right"><a class="active" href="digital.html">Digital</a>
+      <a href="traditional.html">Traditional</a></div>
+    </div>
+  <div class="content">
+    <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        By Medium<br><button class="btn" onclick="filterSelection('conte')"> Conte Crayon</button>
+        <button class="btn" onclick="filterSelection('char')"> Charcoal</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+        By Tools
+        <button class="btn" onclick="filterSelection('ill')"> Illustrator</button>
+        <button class="btn" onclick="filterSelection('figma')"> Figma</button>
+      </div>
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="container">
+        <img src="2.jpg" class="filterDiv conte exhibit">
+        <img src="3.jpg" class="filterDiv char">
+        <img src="d1.jpg" class="filterDiv figma">
+      </div>
+
+
+  <div class="footer">Sophie Xu 2021<br>Contact xsophiexu@nyu.edu</div>
+  </div>
+  </div></body>
+<script src="script.js"></script>
+</html>
